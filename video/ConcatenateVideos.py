@@ -1,9 +1,8 @@
 """
-
     This script concatenates multiple video files into a single output video,
     appending them one after another in the order provided.
 
-    It uses OpenCV (cv2) to:
+    It uses cv2 to:
     - Read each input video frame-by-frame
     - Optionally resize frames to a target resolution
     - Write all frames into a single output video file
@@ -11,8 +10,8 @@
     A tqdm-based progress bar is used to show progress
 
     Requirements:
-    - All input videos should ideally have the same FPS and codec.
-    - Resolution mismatches can be handled automatically via resizing.
+    - All input videos should ideally have the same FPS and codec (different FPS especially messes things up)
+    - Resolution mismatches can be handled via resizing in __main__
 
     Author :        Martijn Folmer
     Date created :  03-01-2026
@@ -85,7 +84,7 @@ if __name__ == "__main__":
     # Base directory for videos
     BASE_PATH = "videos"
 
-    # Videos to concatenate (order matters)
+    # Videos to concatenate (order matters, first goes first, last goes last)
     videos = [
         "recording_0.mp4",
         "recording_1.mp4",
@@ -97,6 +96,8 @@ if __name__ == "__main__":
 
     video_paths = [os.path.join(BASE_PATH, v) for v in videos]
     output_video = os.path.join(BASE_PATH, "combined.mp4")
+
+    print("Start the video concatenation")
 
     concatenate_videos(
         video_paths,

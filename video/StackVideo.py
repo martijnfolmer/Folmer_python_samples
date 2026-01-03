@@ -37,7 +37,7 @@ def stack_videos(
     if not video_paths:
         raise ValueError("video_paths is empty")
 
-    # Open captures
+    # Open captures for each video
     caps = []
     for p in video_paths:
         cap = cv2.VideoCapture(p)
@@ -91,7 +91,7 @@ def stack_videos(
             for cap in caps:
                 ok, frame = cap.read()
                 if not ok:
-                    return  # done (min-length behavior)
+                    return  # no more frames to read, move on
 
                 # Ensure 3-channel BGR
                 if frame is None:
@@ -126,7 +126,7 @@ def stack_videos(
             cap.release()
         # writer might not exist if we error early, so guard
         try:
-            writer.release()  # type: ignore[name-defined]
+            writer.release()
         except Exception:
             pass
 
