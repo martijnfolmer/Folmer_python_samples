@@ -1,0 +1,5 @@
+# Ignore video files and directories
+/video/videos/
+
+# Ignore image files and directories
+/images/images
