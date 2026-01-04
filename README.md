@@ -11,7 +11,7 @@ Delete a directory, including all files, directories, subdirectories, sub-subdir
 
 ## Images
 
-### ConvertImageType.py
+### ConvertImagesTypeDir.py
 Batch converts images from one format to another.
 
 ### ORBComparison.py
