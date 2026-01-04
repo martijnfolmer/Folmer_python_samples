@@ -5,6 +5,10 @@ in projects I'm working on. Feel free to use anything you find here in any way y
 
 This is an ongoing process and I will be regularly adding to this repository
 
+## Audio
+### TrimWav.py
+Shorten a .wav file by trimming the start and end of the audio file
+
 ## File Handling
 ### DeleteEverything.py
 Delete a directory, including all files, directories, subdirectories, sub-subdirectories etc.
@@ -36,7 +40,8 @@ Stacks multiple videos into one frame, either horizontally or vertically.
 
 - Python 3.10+
 - OpenCV (`pip install opencv-python`)
-- NumPy (for video stacking)
+- NumPy 
+- pydub (for audio processing)
 - tqdm (for progress bars)
 ---
 
