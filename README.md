@@ -14,8 +14,14 @@ Delete a directory, including all files, directories, subdirectories, sub-subdir
 ### ConvertImageType.py
 Batch converts images from one format to another.
 
+### ORBComparison.py
+Compare 2 images using ORB to check for feature matching and alignment issues
+![2 images with matches between where we see similar features](readme_img/ORBComparison.png)
+
 ### ResizeImagesDir.py
 Batch converts images from one size to another.
+
+
 
 ## Video
 
