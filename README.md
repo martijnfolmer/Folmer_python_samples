@@ -5,11 +5,17 @@ in projects I'm working on. Feel free to use anything you find here in any way y
 
 This is an ongoing process and I will be regularly adding to this repository
 
+## File Handling
+### DeleteEverything.py
+Delete a directory, including all files, directories, subdirectories, sub-subdirectories etc.
 
 ## Images
 
 ### ConvertImageType.py
 Batch converts images from one format to another.
+
+### ResizeImagesDir.py
+Batch converts images from one size to another.
 
 ## Video
 
