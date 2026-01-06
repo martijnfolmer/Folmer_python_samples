@@ -101,7 +101,6 @@ def stack_images_from_directories(
     resize_to: tuple[int, int] | None = None,
     add_labels: bool = True,
     label_height: int = 40,
-    pad_color: tuple[int, int, int] = (0, 0, 0),
     verbose_n: int = 1,
 ) -> None:
     """
@@ -307,9 +306,6 @@ if __name__ == "__main__":
     # Height of the label bar in pixels
     LABEL_HEIGHT = 40
     
-    # Padding color (B, G, R)
-    PAD_COLOR = (0, 0, 0)
-    
     # Print progress every N images
     VERBOSE_N = 1
     
@@ -320,7 +316,6 @@ if __name__ == "__main__":
         resize_to=RESIZE_TO,
         add_labels=ADD_LABELS,
         label_height=LABEL_HEIGHT,
-        pad_color=PAD_COLOR,
         verbose_n=VERBOSE_N,
     )
 

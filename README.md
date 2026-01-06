@@ -13,6 +13,10 @@ Shorten a .wav file by trimming the start and end of the audio file
 ### DeleteEverything.py
 Delete a directory, including all files, directories, subdirectories, sub-subdirectories etc.
 
+### DirectorySummary.py
+Analyze a directory and generate a summary including total file count, total size, file count and size by extension, largest/smallest files. Outputs to console and saves to a txt file.
+![Example output of directory summary showing file statistics](readme_img/directorySummary.png)
+
 ## Images
 
 ### ConvertImagesTypeDir.py
