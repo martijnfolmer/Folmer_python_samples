@@ -25,7 +25,8 @@ Compare 2 images using ORB to check for feature matching and alignment issues
 ### ResizeImagesDir.py
 Batch converts images from one size to another.
 
-
+### StackImagesDir.py
+Stack images from multiple directories based on matching filenames. Stacks horizontally or vertically, adds directory name labels above each image, and resizes as needed. If only one directory is provided, stacks all images in that directory together.
 
 ## Video
 
