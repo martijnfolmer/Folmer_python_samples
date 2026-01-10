@@ -22,6 +22,10 @@ Analyze a directory and generate a summary including total file count, total siz
 ### ConvertImagesTypeDir.py
 Batch converts images from one format to another.
 
+### EdgeDetection.py
+Find the edges of an image using opencvs canny edge detection
+![the image and its edge detection](readme_img/edgedetection.png)
+
 ### ORBComparison.py
 Compare 2 images using ORB to check for feature matching and alignment issues
 ![2 images with matches between where we see similar features](readme_img/ORBComparison.png)
@@ -29,7 +33,7 @@ Compare 2 images using ORB to check for feature matching and alignment issues
 ### ResizeImagesDir.py
 Batch converts images from one size to another.
 
-### StackImagesDir.py
+### StackImagesMultipleDir.py
 Stack images from multiple directories based on matching filenames. Stacks horizontally or vertically, adds directory name labels above each image, and resizes as needed. If only one directory is provided, stacks all images in that directory together.
 
 ## Video
