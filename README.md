@@ -19,6 +19,10 @@ Analyze a directory and generate a summary including total file count, total siz
 
 ## Images
 
+### ArucoMarkerDetection.py
+Detection aruco markers in an image
+![5 6x6 aruco markers are identified in an image](readme_img/arucoMarkerDetection.png)
+
 ### ConvertImagesTypeDir.py
 Batch converts images from one format to another.
 
