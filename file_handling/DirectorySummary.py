@@ -206,7 +206,7 @@ def summarize_directory(
 
 if __name__ == "__main__":
     
-    TARGET_DIR = "C:/Users/martijn.folmer/Folmer_python_samples/"                            # Directory to analyze
+    TARGET_DIR = "."                            # Directory to analyze
     OUTPUT_FILE = "directory_summary.txt"       # Where to save the summary (set to None to skip)
     PRINT_SUMMARY = True                        # Whether to print to console
     
@@ -215,4 +215,5 @@ if __name__ == "__main__":
         output_file=OUTPUT_FILE,
         print_summary=PRINT_SUMMARY,
     )
+
 
