@@ -24,7 +24,7 @@ Detection aruco markers in an image
 ![5 6x6 aruco markers are identified in an image](readme_img/arucoMarkerDetection.png)
 
 ### ConvertImagesTypeDir.py
-Batch converts images from one format to another.
+Converts images from one format to another.
 
 ### EdgeDetection.py
 Find the edges of an image using opencvs canny edge detection
@@ -35,10 +35,10 @@ Compare 2 images using ORB to check for feature matching and alignment issues
 ![2 images with matches between where we see similar features](readme_img/ORBComparison.png)
 
 ### ResizeImagesDir.py
-Batch converts images from one size to another.
+Converts images from one size to another.
 
 ### ResizeImagesMaxDimensionsDir.py
-Batch resizes images that exceed maximum width/height limits while preserving aspect ratio. Images already within the specified dimensions are copied unchanged.
+Resizes images that exceed maximum width/height limits while preserving aspect ratio. Images already within the specified dimensions are copied unchanged.
 
 ### StackImagesMultipleDir.py
 Stack images from multiple directories based on matching filenames. Stacks horizontally or vertically, adds directory name labels above each image, and resizes as needed. If only one directory is provided, stacks all images in that directory together.
@@ -47,6 +47,10 @@ Stack images from multiple directories based on matching filenames. Stacks horiz
 
 ### ConcatenateVideos.py
 Concatenates multiple videos into a single output video.
+
+### RepeatVideo.py
+Repeats a single video multiple times in a row. Optional spatial cropping to extract a specific region of interest from each frame and optional trimming to skip frames from the beginning or end.
+
 ### StackVideo.py
 Stacks multiple videos into one frame, either horizontally or vertically.
 
