@@ -53,6 +53,9 @@ Stack images from multiple directories based on matching filenames. Stacks horiz
 ### ConcatenateVideos.py
 Concatenates multiple videos into a single output video.
 
+### ExtractClipFromVideoFromTimestamps.py
+Takes a clip between two timestamps of a video and uses cv2 to extract the clip and save it somewhere else
+
 ### RepeatVideo.py
 Repeats a single video multiple times in a row. Optional spatial cropping to extract a specific region of interest from each frame and optional trimming to skip frames from the beginning or end.
 
