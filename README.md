@@ -28,6 +28,9 @@ Analyze a directory and generate a summary including total file count, total siz
 Detection aruco markers in an image
 ![5 6x6 aruco markers are identified in an image](readme_img/arucoMarkerDetection.png)
 
+### ConvertImagesToGrayscaleDir.py
+Converts images from color to grayscale
+
 ### ConvertImagesTypeDir.py
 Converts images from one format to another.
 
