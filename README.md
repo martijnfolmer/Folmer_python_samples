@@ -9,6 +9,11 @@ This is an ongoing process and I will be regularly adding to this repository
 ### TrimWav.py
 Shorten a .wav file by trimming the start and end of the audio file
 
+## DataVisualisation
+### 2DPlot.py
+Different ways of plotting 2D data
+![Example output of the different 2D plots](readme_img/2DPlot.png)
+
 ## File Handling
 ### DeleteEverything.py
 Delete a directory, including all files, directories, subdirectories, sub-subdirectories etc.
