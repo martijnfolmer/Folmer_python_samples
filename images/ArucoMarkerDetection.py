@@ -13,7 +13,6 @@
     Date created :  10-01-2026
 """
 
-
 import cv2
 
 
@@ -23,7 +22,7 @@ def detect_aruco_markers(image_path, output_path, dict_name):
     if image_bgr is None:
         raise FileNotFoundError(f"Could not load image: {image_path}")
 
-    # ---- ArUco dictionary selection ----
+    # ArUco dictionary selection
     aruco = cv2.aruco
     if dict_name == "DICT_4X4_50":
         aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
@@ -41,14 +40,14 @@ def detect_aruco_markers(image_path, output_path, dict_name):
             "Try one of: DICT_4X4_50, DICT_4X4_100, DICT_5X5_100, DICT_6X6_250, DICT_7X7_1000"
         )
 
-    # Detector parameters (OpenCV 4.7+ style)
+    # Detector parameters
     params = aruco.DetectorParameters()
     detector = aruco.ArucoDetector(aruco_dict, params)
 
     # Detect markers
     corners, ids, rejected = detector.detectMarkers(image_bgr)
 
-    # Draw detections + print IDs
+    # Show detections and ids
     vis = image_bgr.copy()
     if ids is not None and len(ids) > 0:
         aruco.drawDetectedMarkers(vis, corners, ids)

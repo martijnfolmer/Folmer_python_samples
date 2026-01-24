@@ -23,6 +23,7 @@ from pathlib import Path
 import cv2
 import os
 
+
 def ensure_empty_dir(dir_path: Path) -> None:
     """Create directory if needed and remove all files inside it."""
     dir_path.mkdir(parents=True, exist_ok=True)

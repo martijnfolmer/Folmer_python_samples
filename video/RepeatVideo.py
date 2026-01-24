@@ -84,8 +84,6 @@ def repeat_video(
         if not writer.isOpened():
             raise RuntimeError(f"Could not open VideoWriter for: {output_path}")
 
-        total_frames = effective_frame_count * repeat_count
-
         # Process and write frames for each repetition
         for i in range(repeat_count):
             # Reset video to start frame for each repetition
@@ -134,8 +132,6 @@ if __name__ == "__main__":
     # Trim frames from the beginning and end, set to 0 to disable trimming
     TRIM_START = 0  # Number of frames to skip from the beginning
     TRIM_END = 0    # Number of frames to skip from the end
-
-    # Codec (mp4v is commonly available; try 'avc1' or 'H264' if supported)
     CODEC = "mp4v"
 
     # Ensure output directory exists
@@ -160,4 +156,3 @@ if __name__ == "__main__":
     )
 
     print(f"Saved repeated video to: {OUTPUT_PATH}")
-

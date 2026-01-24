@@ -61,7 +61,7 @@ def clean_directory_by_name(
                 os.remove(file_path)
                 deleted_files.append(file_path)
 
-    # -------------------- Summary --------------------
+    # Print the summary
     print("Directory cleanup complete")
     print(f"Target directory: {target_dir}")
     print(f"Search string:    '{name_substring}'")

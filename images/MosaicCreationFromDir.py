@@ -7,14 +7,13 @@ from pathlib import Path
 """
 
     What this script does:
-    - Reads all readable image files from a source directory
+    - Reads all image files from a source directory
     - Selects random ones and resizes them to put them in a grid, mosaic style
     - saves the mosaics in an output directory
 
     IMPORTANT NOTE:
     - creating the directory where we store the created images is destructive, meaning that any files in it will
     be deleted. Make sure you change the directory if you want to keep the data
-
 
     Author :        Martijn Folmer
     Date created :  24-01-2026

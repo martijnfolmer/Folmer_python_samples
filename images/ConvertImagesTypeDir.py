@@ -23,6 +23,7 @@ from pathlib import Path
 import cv2
 import os
 
+
 def ensure_empty_dir(dir_path: Path) -> None:
     """Create directory if needed and remove all files inside it."""
     dir_path.mkdir(parents=True, exist_ok=True)
@@ -71,7 +72,7 @@ if __name__ == "__main__":
     SRC_DIR = Path(r"images")               # where the images come from
     DST_DIR = Path(r"converted_images")     # where the converted images are going
 
-    # Output image format (NO DOT!!!!!!)
+    # Output image format (do not insert dot/period/small black circle!!!!!!)
     OUTPUT_EXT = "jpg"  # e.g. "jpg", "png", "webp"
 
     VERBOSE_N = 3      # How often we print our progress

@@ -49,7 +49,6 @@ def stack_videos(
         caps.append(cap)
 
     try:
-        # Gather properties
         widths, heights, fps_list = [], [], []
         for cap in caps:
             w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -151,7 +150,6 @@ if __name__ == "__main__":
     # Padding color (B, G, R) used only if an odd mismatch occurs
     PAD_COLOR = (0, 0, 0)
 
-    # Codec (mp4v is commonly available; try 'avc1' or 'H264' if supported)
     CODEC = "mp4v"
 
     # Ensure output directory exists (if specified)
