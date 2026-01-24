@@ -38,6 +38,10 @@ Converts images from one format to another.
 Find the edges of an image using opencvs canny edge detection
 ![the image and its edge detection](readme_img/edgedetection.png)
 
+### MosaicCreationFromDir.py
+Create mosaics from random images in a directory
+![mosaic showing a grid of random images](readme_img/MosaicCreationFromDir.png)
+
 ### ORBComparison.py
 Compare 2 images using ORB to check for feature matching and alignment issues
 ![2 images with matches between where we see similar features](readme_img/ORBComparison.png)
