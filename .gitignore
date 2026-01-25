@@ -3,3 +3,6 @@
 
 # Ignore image files and directories
 /images/images
+
+# ignore gamedev image files
+/gamedev/images

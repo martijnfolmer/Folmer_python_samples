@@ -28,6 +28,13 @@ Analyze a directory and generate a summary including total file count, total siz
 ### MoveFilesToAnotherDirectory.py
 Move all files (including subdirectories) to another directory
 
+## Gamedev
+
+### removeBackgroundToPng.py
+Takes the images in a directory, and removes the given background color by doing a flood fill. Saves the result as a png
+with a transparant background
+
+
 ## Images
 
 ### ArucoMarkerDetection.py
