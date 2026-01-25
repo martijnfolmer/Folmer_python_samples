@@ -1,5 +1,5 @@
 """
-    Batch image format converter using OpenCV.
+    Image format converter using OpenCV.
 
     What this script does:
     - Reads all readable image files from a source directory

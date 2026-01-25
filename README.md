@@ -33,6 +33,7 @@ Move all files (including subdirectories) to another directory
 ### removeBackgroundToPng.py
 Takes the images in a directory, and removes the given background color by doing a flood fill. Saves the result as a png
 with a transparant background
+![an example of a megaman sprite where the white is removed and transparant png is saved](readme_img/removeBackgroundToPng.png)
 
 
 ## Images
@@ -50,6 +51,10 @@ Converts images from one format to another.
 ### EdgeDetection.py
 Find the edges of an image using opencvs canny edge detection
 ![the image and its edge detection](readme_img/edgedetection.png)
+
+### Letterboxing.py
+Resize images but keep their aspect ratio, and put a certain color as a letterbox around it
+![3 images that are resized to 640x640 with a gray background as letterbox](readme_img/Letterboxing.png)
 
 ### MosaicCreationFromDir.py
 Create mosaics from random images in a directory
