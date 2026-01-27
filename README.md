@@ -9,6 +9,11 @@ This is an ongoing process and I will be regularly adding to this repository
 ### TrimWav.py
 Shorten a .wav file by trimming the start and end of the audio file
 
+## Datascience
+### clusterPoints.py
+Cluster points based on proximity using the DBSCAN algorithm
+![visualisation of 2d and 3d clustering using the DBSCAN algorithm](readme_img/clusterPoints.png)
+
 ## DataVisualisation
 ### 2DPlot.py
 Different ways of plotting 2D data
