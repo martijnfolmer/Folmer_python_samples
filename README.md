@@ -33,6 +33,9 @@ Analyze a directory and generate a summary including total file count, total siz
 ### MoveFilesToAnotherDirectory.py
 Move all files (including subdirectories) to another directory
 
+### UnzipFiles.py
+Unzip all files in a given directory
+
 ## Gamedev
 
 ### removeBackgroundToPng.py
