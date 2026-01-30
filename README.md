@@ -97,6 +97,9 @@ Takes a clip between two timestamps of a video and uses cv2 to extract the clip 
 ### RepeatVideo.py
 Repeats a single video multiple times in a row. Optional spatial cropping to extract a specific region of interest from each frame and optional trimming to skip frames from the beginning or end.
 
+### SplitVideoIntoClips.py
+Splits a video into N equal-length clips (by frame count) and saves them to a specified output directory
+
 ### StackVideo.py
 Stacks multiple videos into one frame, either horizontally or vertically.
 
