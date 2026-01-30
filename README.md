@@ -20,6 +20,11 @@ Different ways of plotting 2D data
 ![Example output of the different 2D plots](readme_img/2DPlot.png)
 
 ## File Handling
+
+### CopyFilesByTypes.py
+Crawl through a directory and its subdirectories, and copies any file with a certain extension (given by a list)
+to a new directory
+
 ### DeleteEverything.py
 Delete a directory, including all files, directories, subdirectories, sub-subdirectories etc.
 
