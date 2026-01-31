@@ -6,3 +6,6 @@
 
 # ignore gamedev image files
 /gamedev/images
+
+# ignore trained models
+/dataScience/models
