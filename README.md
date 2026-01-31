@@ -51,6 +51,10 @@ Takes the images in a directory, and removes the given background color by doing
 with a transparant background
 ![an example of a megaman sprite where the white is removed and transparant png is saved](readme_img/removeBackgroundToPng.png)
 
+### replaceColorImg.py
+Replace a color within a certain tolerance with another color, keeping offsets in mind so the replaced color still
+has gradients
+![an example of replacing blue with green on a megaman sprite](readme_img/replaceColorImg.png)
 
 ## Images
 
