@@ -14,6 +14,10 @@ Shorten a .wav file by trimming the start and end of the audio file
 Cluster points based on proximity using the DBSCAN algorithm
 ![visualisation of 2d and 3d clustering using the DBSCAN algorithm](readme_img/clusterPoints.png)
 
+### KNNClassification.py
+Classify points using the K-nearest neighbors algorithm. Creates a dataset with classified training points and unclassified test points that are classified based on their k nearest neighbors.
+![visualisation of KNN classification showing training points and predicted test points](readme_img/knnClassification.png)
+
 ### ML_trainMnistClassificationKeras.py
 Train a mnist classification model using keras as backend
 
