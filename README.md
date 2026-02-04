@@ -97,6 +97,10 @@ Resizes images that exceed maximum width/height limits while preserving aspect r
 ### StackImagesMultipleDir.py
 Stack images from multiple directories based on matching filenames. Stacks horizontally or vertically, adds directory name labels above each image, and resizes as needed. If only one directory is provided, stacks all images in that directory together.
 
+### WaterMarkImageOrVideo.py
+Add a watermark to a video or image
+![megaman watermark on an image](readme_img/WatermarkImageOrVideo.jpg)
+
 ## Video
 
 ### ChangeFPS.py
