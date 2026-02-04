@@ -99,6 +99,9 @@ Stack images from multiple directories based on matching filenames. Stacks horiz
 
 ## Video
 
+### ChangeFPS.py
+Change the fps of a video by duplicating or removing frames
+
 ### ConcatenateVideos.py
 Concatenates multiple videos into a single output video.
 
