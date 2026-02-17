@@ -101,6 +101,9 @@ Stack images from multiple directories based on matching filenames. Stacks horiz
 Add a watermark to a video or image
 ![megaman watermark on an image](readme_img/WatermarkImageOrVideo.jpg)
 
+### FindDuplicateImages.py
+Finds duplicate images in a directory by checking resolution and pixel content. Moves all duplicates to a `duplicate_images` subdirectory, keeping the first occurrence of each unique image.
+
 ## Video
 
 ### ChangeFPS.py
