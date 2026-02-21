@@ -79,6 +79,12 @@ Converts images from one format to another.
 Find the edges of an image using opencvs canny edge detection
 ![the image and its edge detection](readme_img/edgedetection.png)
 
+### FindDuplicateImages_md5.py
+Find duplicate images in a directory based on md5 hash and metadata.
+
+### FindDuplicateImages_size_and_pixels.py
+Find duplicate images in a directory based on pixel information and size
+
 ### Letterboxing.py
 Resize images but keep their aspect ratio, and put a certain color as a letterbox around it
 ![3 images that are resized to 640x640 with a gray background as letterbox](readme_img/Letterboxing.png)
