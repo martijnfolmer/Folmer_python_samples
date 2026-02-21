@@ -45,6 +45,9 @@ Analyze a directory and generate a summary including total file count, total siz
 ### MoveFilesToAnotherDirectory.py
 Move all files (including subdirectories) to another directory
 
+### SortFilesByType.py
+Sort all files in a directory and subdirectories by file extension, and copy them to new sorted directories
+
 ### UnzipFiles.py
 Unzip all files in a given directory
 
