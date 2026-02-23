@@ -21,6 +21,9 @@ Classify points using the K-nearest neighbors algorithm. Creates a dataset with 
 ### ML_trainMnistClassificationKeras.py
 Train a mnist classification model using keras as backend
 
+### ML_trainMnistClassificationUltralytics.py
+Train a mnist classification model using the Ultralytics YOLO framework
+
 ## DataVisualisation
 ### 2DPlot.py
 Different ways of plotting 2D data
