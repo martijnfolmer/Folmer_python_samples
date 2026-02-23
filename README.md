@@ -138,7 +138,7 @@ Stacks multiple videos into one frame, either horizontally or vertically.
 
 ### VideoFrameExtractor.py
 Extract frames from one or more videos and save them as images.
----
+
 
 ## Requirements
 
