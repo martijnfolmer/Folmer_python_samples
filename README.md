@@ -100,6 +100,10 @@ Create mosaics from random images in a directory
 Compare 2 images using ORB to check for feature matching and alignment issues
 ![2 images with matches between where we see similar features](readme_img/ORBComparison.png)
 
+### FindRotationTwoImages.py
+Calculate rotation and translation (horizontal/vertical shifts) between two images using ORB feature matching. Useful for detecting camera misalignment. Returns rotation angle in degrees and translation in pixels.
+![Two images with matched features showing rotation and translation information](readme_img/orbRotation.png)
+
 ### ResizeImagesDir.py
 Converts images from one size to another.
 
