@@ -78,6 +78,10 @@ Converts images from color to grayscale
 ### ConvertImagesTypeDir.py
 Converts images from one format to another.
 
+### CrossFadeImages.py
+Blend two images with a configurable mix ratio (cross-fade). The second image is resized to match the first if sizes differ. IN the example, the mix ratio is 0.5, so both are taken.
+![two color fields blended into a single cross-faded image](readme_img/CrossFadeImages.png)
+
 ### EdgeDetection.py
 Find the edges of an image using opencvs canny edge detection
 ![the image and its edge detection](readme_img/edgedetection.png)

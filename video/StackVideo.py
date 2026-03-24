@@ -133,8 +133,8 @@ def stack_videos(
 if __name__ == "__main__":
 
     VIDEO_PATHS = [
-        "videos/recording_0.mp4",
-        "videos/recording_1.mp4",
+        "C:/Users/martijn.folmer/Downloads/uclaBusses/combined_busses.mp4",
+        "C:/Users/martijn.folmer/Downloads/uclaBusses/combined_busses_2026-03-20_0940.mp4",
     ]
 
     OUTPUT_PATH = "videos/stacked_output.mp4"
@@ -144,8 +144,8 @@ if __name__ == "__main__":
 
     # set to (width, height) to force a fixed size for each input
     # Set to None to auto-resize to smallest common size among inputs
-    RESIZE_TO = (640, 360)  # e.g. (640, 360) or None
-    # RESIZE_TO = None
+    # RESIZE_TO = (640, 360)  # e.g. (640, 360) or None
+    RESIZE_TO = None
 
     # Padding color (B, G, R) used only if an odd mismatch occurs
     PAD_COLOR = (0, 0, 0)

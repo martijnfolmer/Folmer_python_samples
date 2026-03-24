@@ -82,13 +82,17 @@ def concatenate_videos(
 
 if __name__ == "__main__":
     # Base directory for videos
-    BASE_PATH = "videos"
+    BASE_PATH = "C:/Users/martijn.folmer/Downloads/uclaBusses/bus"
 
+    videos = os.listdir(BASE_PATH)
+    videos.sort()
+    for video in videos:
+        print(video)
     # Videos to concatenate (order matters, first goes first, last goes last)
-    videos = [
-        "recording_0.mp4",
-        "recording_1.mp4",
-    ]
+    # videos = [
+    #     "recording_0.mp4",
+    #     "recording_1.mp4",
+    # ]
 
     # Optional resize settings
     ENABLE_RESIZE = True
