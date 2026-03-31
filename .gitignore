@@ -9,3 +9,4 @@
 
 # ignore trained models
 /dataScience/models
+dataScience/yolo11n-pose.pt

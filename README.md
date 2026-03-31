@@ -24,6 +24,9 @@ Train a mnist classification model using keras as backend
 ### ML_trainMnistClassificationUltralytics.py
 Train a mnist classification model using the Ultralytics YOLO framework
 
+### WebcamPoseEstimationUltralytics.py
+Open the webcam, run Ultralytics YOLO pose estimation on each frame, and display the video with keypoints and skeleton drawn
+
 ## DataVisualisation
 ### 2DPlot.py
 Different ways of plotting 2D data
@@ -92,7 +95,7 @@ Find duplicate images in a directory based on md5 hash and metadata.
 ### FindDuplicateImages_size_and_pixels.py
 Find duplicate images in a directory based on pixel information and size
 
-### Letterboxing.py
+### LetterBoxing.py
 Resize images but keep their aspect ratio, and put a certain color as a letterbox around it
 ![3 images that are resized to 640x640 with a gray background as letterbox](readme_img/Letterboxing.png)
 
@@ -104,7 +107,7 @@ Create mosaics from random images in a directory
 Compare 2 images using ORB to check for feature matching and alignment issues
 ![2 images with matches between where we see similar features](readme_img/ORBComparison.png)
 
-### FindRotationTwoImages.py
+### FindRotationTranslationTwoImages.py
 Calculate rotation and translation (horizontal/vertical shifts) between two images using ORB feature matching. Useful for detecting camera misalignment. Returns rotation angle in degrees and translation in pixels.
 ![Two images with matched features showing rotation and translation information](readme_img/orbRotation.png)
 
@@ -120,9 +123,6 @@ Stack images from multiple directories based on matching filenames. Stacks horiz
 ### WaterMarkImageOrVideo.py
 Add a watermark to a video or image
 ![megaman watermark on an image](readme_img/WatermarkImageOrVideo.jpg)
-
-### FindDuplicateImages.py
-Finds duplicate images in a directory by checking resolution and pixel content. Moves all duplicates to a `duplicate_images` subdirectory, keeping the first occurrence of each unique image.
 
 ## Video
 
@@ -152,6 +152,7 @@ Extract frames from one or more videos and save them as images.
 
 - Python 3.10+
 - OpenCV (`pip install opencv-python`)
+- ultralytics
 - NumPy 
 - pydub (for audio processing)
 - tqdm (for progress bars)
