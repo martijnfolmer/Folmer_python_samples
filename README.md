@@ -78,6 +78,10 @@ has gradients
 Detection aruco markers in an image
 ![5 6x6 aruco markers are identified in an image](readme_img/arucoMarkerDetection.png)
 
+### BlackBoxTool.py
+A tool to draw black boxes on top of images to hide things like timestamps and logos. Will apply the same black rectangles to
+all directories inside of the given directory and save copies in a sepparate directory
+
 ### ConvertImagesToGrayscaleDir.py
 Converts images from color to grayscale
 
