@@ -48,6 +48,9 @@ Deletes all files in a directory that have a particular substring in their name 
 Analyze a directory and generate a summary including total file count, total size, file count and size by extension, largest/smallest files. Outputs to console and saves to a txt file.
 ![Example output of directory summary showing file statistics](readme_img/directorySummary.png)
 
+### ImageSelector.py
+Open a folder picker, then review images one by one in a simple GUIWindow. Left arrow skips the current file, right arrow copies it into another folder named with the source folder name plus _selected, which is located at the same directory as the original folder
+
 ### MoveFilesToAnotherDirectory.py
 Move all files (including subdirectories) to another directory
 
@@ -151,7 +154,8 @@ Extract frames from one or more videos and save them as images.
 ## Requirements
 
 - Python 3.10+
-- OpenCV (`pip install opencv-python`)
+- OpenCV (pip install opencv-python)
+- Pillow (pip install Pillow) — image loading for GUI tools such as fileHandling/ImageSelector.py
 - ultralytics
 - NumPy 
 - pydub (for audio processing)
@@ -160,7 +164,7 @@ Extract frames from one or more videos and save them as images.
 
 ## Notes
 
-- All scripts use hardcoded paths and settings inside `__main__` for clarity
+- Most scripts use hardcoded paths and settings inside __main__ for clarity; fileHandling/ImageSelector.py uses a folder dialog with a default start directory you can change in main()
 - Modify paths and parameters directly in the script before running
 - Designed for clarity over maximum performance. 
 - Not all quality of life functionality exists over every script, so do not be alarmed if they for example have different verbose printing
