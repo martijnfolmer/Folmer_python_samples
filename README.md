@@ -24,6 +24,9 @@ Train a mnist classification model using keras as backend
 ### ML_trainMnistClassificationUltralytics.py
 Train a mnist classification model using the Ultralytics YOLO framework
 
+### ML_trainRandomForestClassifier.py
+Train a random forest classifier, which is usefull for tabular data
+
 ### WebcamPoseEstimationUltralytics.py
 Open the webcam, run Ultralytics YOLO pose estimation on each frame, and display the video with keypoints and skeleton drawn
 
