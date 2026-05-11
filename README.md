@@ -24,12 +24,6 @@ Train a mnist classification model using keras as backend
 ### ML_trainMnistClassificationUltralytics.py
 Train a mnist classification model using the Ultralytics YOLO framework
 
-### ML_trainRandomForestClassifier.py
-Train a random forest classifier, which is usefull for tabular data
-
-### WebcamPoseEstimationUltralytics.py
-Open the webcam, run Ultralytics YOLO pose estimation on each frame, and display the video with keypoints and skeleton drawn
-
 ## DataVisualisation
 ### 2DPlot.py
 Different ways of plotting 2D data
@@ -50,9 +44,6 @@ Deletes all files in a directory that have a particular substring in their name 
 ### DirectorySummary.py
 Analyze a directory and generate a summary including total file count, total size, file count and size by extension, largest/smallest files. Outputs to console and saves to a txt file.
 ![Example output of directory summary showing file statistics](readme_img/directorySummary.png)
-
-### ImageSelector.py
-Open a folder picker, then review images one by one in a simple GUIWindow. Left arrow skips the current file, right arrow copies it into another folder named with the source folder name plus _selected, which is located at the same directory as the original folder
 
 ### MoveFilesToAnotherDirectory.py
 Move all files (including subdirectories) to another directory
@@ -81,10 +72,6 @@ has gradients
 Detection aruco markers in an image
 ![5 6x6 aruco markers are identified in an image](readme_img/arucoMarkerDetection.png)
 
-### BlackBoxTool.py
-A tool to draw black boxes on top of images to hide things like timestamps and logos. Will apply the same black rectangles to
-all directories inside of the given directory and save copies in a sepparate directory
-
 ### ConvertImagesToGrayscaleDir.py
 Converts images from color to grayscale
 
@@ -105,7 +92,10 @@ Find duplicate images in a directory based on md5 hash and metadata.
 ### FindDuplicateImages_size_and_pixels.py
 Find duplicate images in a directory based on pixel information and size
 
-### LetterBoxing.py
+### FindDuplicateImages_ssim.py
+Find duplicate images using SSIM (Structural Similarity). Each image is resized to a fixed comparison size, then compared to already-kept uniques; pairs at or above an SSIM threshold are treated as duplicates (first file kept). Useful when the same photo was re-encoded or exported at a different resolution. Requires scikit-image. Moves duplicates to a `duplicate_images` subdirectory, like the other duplicate finders.
+
+### Letterboxing.py
 Resize images but keep their aspect ratio, and put a certain color as a letterbox around it
 ![3 images that are resized to 640x640 with a gray background as letterbox](readme_img/Letterboxing.png)
 
@@ -117,7 +107,7 @@ Create mosaics from random images in a directory
 Compare 2 images using ORB to check for feature matching and alignment issues
 ![2 images with matches between where we see similar features](readme_img/ORBComparison.png)
 
-### FindRotationTranslationTwoImages.py
+### FindRotationTwoImages.py
 Calculate rotation and translation (horizontal/vertical shifts) between two images using ORB feature matching. Useful for detecting camera misalignment. Returns rotation angle in degrees and translation in pixels.
 ![Two images with matched features showing rotation and translation information](readme_img/orbRotation.png)
 
@@ -133,6 +123,9 @@ Stack images from multiple directories based on matching filenames. Stacks horiz
 ### WaterMarkImageOrVideo.py
 Add a watermark to a video or image
 ![megaman watermark on an image](readme_img/WatermarkImageOrVideo.jpg)
+
+### FindDuplicateImages.py
+Finds duplicate images in a directory by checking resolution and pixel content. Moves all duplicates to a `duplicate_images` subdirectory, keeping the first occurrence of each unique image.
 
 ## Video
 
@@ -161,17 +154,16 @@ Extract frames from one or more videos and save them as images.
 ## Requirements
 
 - Python 3.10+
-- OpenCV (pip install opencv-python)
-- Pillow (pip install Pillow) — image loading for GUI tools such as fileHandling/ImageSelector.py
-- ultralytics
-- NumPy 
+- OpenCV (`pip install opencv-python`)
+- NumPy
+- scikit-image (`pip install scikit-image`, for `FindDuplicateImages_ssim.py`)
 - pydub (for audio processing)
 - tqdm (for progress bars)
 ---
 
 ## Notes
 
-- Most scripts use hardcoded paths and settings inside __main__ for clarity; fileHandling/ImageSelector.py uses a folder dialog with a default start directory you can change in main()
+- All scripts use hardcoded paths and settings inside `__main__` for clarity
 - Modify paths and parameters directly in the script before running
 - Designed for clarity over maximum performance. 
 - Not all quality of life functionality exists over every script, so do not be alarmed if they for example have different verbose printing
