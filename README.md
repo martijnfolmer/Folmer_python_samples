@@ -93,7 +93,7 @@ Find duplicate images in a directory based on md5 hash and metadata.
 Find duplicate images in a directory based on pixel information and size
 
 ### FindDuplicateImages_ssim.py
-Find duplicate images using SSIM (Structural Similarity). Each image is resized to a fixed comparison size, then compared to already-kept uniques; pairs at or above an SSIM threshold are treated as duplicates (first file kept). Useful when the same photo was re-encoded or exported at a different resolution. Requires scikit-image. Moves duplicates to a `duplicate_images` subdirectory, like the other duplicate finders.
+Find duplicate images using SSIM (Structural Similarity). Each image is resized to a fixed comparison size, then compared to already-kept uniques, pairs at or above an SSIM threshold are treated as duplicates (first file kept). Requires scikit-image. Moves duplicates to a "duplicate_images" subdirectory.
 
 ### Letterboxing.py
 Resize images but keep their aspect ratio, and put a certain color as a letterbox around it
