@@ -51,6 +51,9 @@ Move all files (including subdirectories) to another directory
 ### SortFilesByType.py
 Sort all files in a directory and subdirectories by file extension, and copy them to new sorted directories
 
+### SynchronizeFolderToBackup
+Backup the contents of a source directory to a target directory, and optionally delete all files in target directory which do not have an equivalent in the source
+
 ### UnzipFiles.py
 Unzip all files in a given directory
 
