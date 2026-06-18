@@ -81,6 +81,10 @@ Converts images from color to grayscale
 ### ConvertImagesTypeDir.py
 Converts images from one format to another.
 
+### CreateQRcode.py
+Creates a qr code with some data encoded using the qrcode library
+![Qr code](readme_img/qr_code_img.png)
+
 ### CrossFadeImages.py
 Blend two images with a configurable mix ratio (cross-fade). The second image is resized to match the first if sizes differ. IN the example, the mix ratio is 0.5, so both are taken.
 ![two color fields blended into a single cross-faded image](readme_img/CrossFadeImages.png)
