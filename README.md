@@ -142,6 +142,10 @@ Change the fps of a video by duplicating or removing frames
 ### ConcatenateVideos.py
 Concatenates multiple videos into a single output video.
 
+### DrawBlackBoxesOnVideo.py
+Shows the middle frame of a video on which you can draw filled black rectangles, then writes a copy of the full video with those boxes on every frame
+![black boxes on video](readme_img/drawBlackBoxesOnVideo.png)
+
 ### ExtractClipFromVideoFromTimestamps.py
 Takes a clip between two timestamps of a video and uses cv2 to extract the clip and save it somewhere else
 
