@@ -29,6 +29,10 @@ Train a mnist classification model using the Ultralytics YOLO framework
 Different ways of plotting 2D data
 ![Example output of the different 2D plots](readme_img/2DPlot.png)
 
+### Scatterplots.py
+2D and 3D scatter plots with basic customization
+![Example output of 2D and 3D scatter plot](readme_img/scatterplots.png)
+
 ## File Handling
 
 ### CopyFilesByTypes.py
