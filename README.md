@@ -49,6 +49,13 @@ Deletes all files in a directory that have a particular substring in their name 
 Analyze a directory and generate a summary including total file count, total size, file count and size by extension, largest/smallest files. Outputs to console and saves to a txt file.
 ![Example output of directory summary showing file statistics](readme_img/directorySummary.png)
 
+### FindEmptyDirectories.py
+Finds all empty directories in a given directory, and optionally deletes them all
+
+### ImageSelector.py
+Interactive GUI to step through images in one folder. Use the left key to skip or the right key to copy the current file
+into a new folder named <source_folder_name>_selected
+
 ### MoveFilesToAnotherDirectory.py
 Move all files (including subdirectories) to another directory
 
