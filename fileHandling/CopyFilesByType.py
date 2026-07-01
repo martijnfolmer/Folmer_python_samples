@@ -75,10 +75,10 @@ def find_files_by_type(source_dir: str, file_extensions: list, destination_dir: 
     return copied_files
 
 
-def main():
+if __name__ == "__main__":
 
-    SOURCE_DIRECTORY = "C:/Users/martijn.folmer/Folmer_python_samples"  # Specify path
-    FILE_EXTENSIONS = ["md", ".png"]  # file types we want to find
+    SOURCE_DIRECTORY = "Path_to_directory_we_want_to_crawl_through"  # Specify path
+    FILE_EXTENSIONS = ["md", ".png"]  # file types we want to find (case insensitive)
     DESTINATION_DIRECTORY = "copied_files"  # Directory where files will be copied to
 
     print(f"Searching for {FILE_EXTENSIONS} files in: {SOURCE_DIRECTORY}")
@@ -98,6 +98,3 @@ def main():
         print("\nCopied files:")
         for file in copied_files:
             print(f"  - {file}")
-
-if __name__ == "__main__":
-    main()
