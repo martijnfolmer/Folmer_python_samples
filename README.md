@@ -52,6 +52,9 @@ Analyze a directory and generate a summary including total file count, total siz
 ### FindEmptyDirectories.py
 Finds all empty directories in a given directory, and optionally deletes them all
 
+### ListAllFiles.py
+Crawl through a directory and its subdirectories using os.walk, and return a list of all file paths. Directories listed in `listToIgnore` are skipped entirely.
+
 ### ImageSelector.py
 Interactive GUI to step through images in one folder. Use the left key to skip or the right key to copy the current file
 into a new folder named <source_folder_name>_selected
