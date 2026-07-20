@@ -71,6 +71,9 @@ Backup the contents of a source directory to a target directory, and optionally 
 ### UnzipFiles.py
 Unzip all files in a given directory
 
+### ZipFilesOfAType.py
+Find all files with a certain file extension, and copy then combine them into a single zip
+
 ## Gamedev
 
 ### removeBackgroundToPng.py

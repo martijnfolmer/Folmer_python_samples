@@ -1,6 +1,5 @@
 import zipfile
 from pathlib import Path
-import os
 
 """
     This script will unzip all zipped files in a given directory
