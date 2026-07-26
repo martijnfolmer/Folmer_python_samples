@@ -76,6 +76,9 @@ Find all files with a certain file extension, and copy then combine them into a 
 
 ## Gamedev
 
+### drawFontsGui.py
+Draws a piece of text with all installed fonts on the system, so we can pick one for our purposes
+
 ### removeBackgroundToPng.py
 Takes the images in a directory, and removes the given background color by doing a flood fill. Saves the result as a png
 with a transparant background
